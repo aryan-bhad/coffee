@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    box-shadow: 3px 3px 1px 6px #fff;
+}
+.navbar{
+    background-color: #fff;
+    color: black;
+    padding: 0 10px;
+    box-shadow: 3px  5px 6px #776161;
+    height: 90px;
+}
+.logo{
+    width:45px;
+    height: 45px;
+}
+.navbar ul li a{
+    color:black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.navbar ul li a:hover{
+    color:chocolate;
+}
+.navbar ul li a i{
+    margin-right: 10px;
+    color: rgb(134, 37, 37); 
+    font-size: 1.2rem;
+}
+.button i{
+    margin-right: 8px;
+}
+.container h3{
+    color: chocolate;
+}
+.container span{
+    color: rgb(46, 5, 5);
+}
+.categories {
+    border: 1px solid rgba(0 0 0/8%);
+    cursor: pointer;
+}
+
+.categories_img {
+    transition: all ease-in .5s;
+}
+
+.categories_img img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.categories:hover .categories_img {
+    transform: scale(1.1);
+    transform-origin: center;
+}
+
+.categories:hover {
+    border-color: var(--orange);
+    transition: all ease .4s;
+}
+
+.our_categories h3.title
+{
+    width: max-content;
+    margin: 0 auto;
+    position: relative;
+}
+
+.our_categories h3.title::before
+{
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    height: 3px;
+    background-color: var(--orange);
+    transition: .2s;
+}
+
+.our_categories h3.title:hover::before
+{
+    width: 80%;
+}
+.productcontent p{
+    padding: 0 auto;
+}
+.productcontent h4{
+    color: red;
+}
+.container h1{
+    color: chocolate;
+}
+.container span{
+    color: rgb(57, 10, 10);
+}
+.footer{
+    background-color: black;
+    color: white;
+}
+.company-logo img{
+    margin-top: 10px;
+   background-color: white;
+}
+.content p{
+    padding-top: 20px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.link-heading h5{
+    margin-top: 10px;
+    text-align: center;
+    color: chocolate;
+}
+.link{
+    color: white;
+    text-align: center;
+}
+.link a{
+    display: block;
+    color: white;
+    padding-top: 10px;
+}
+.link a:hover{
+    display: block;
+    color:chocolate
+}
+.follow-icon{
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2rem;
+}
+.follow-icon a span{
+    margin-left:10px;
+    color: white;
+}
+.follow-icon a span:hover{
+    background-color: white;
+    color: rgb(67, 5, 5);
+}

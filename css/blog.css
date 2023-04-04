@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    box-shadow: 3px 3px 1px 6px #fff;
+}
+.navbar{
+    background-color: #fff;
+    color: black;
+    padding: 0 10px;
+    box-shadow: 3px  5px 6px #776161;
+    height: 90px;
+}
+.logo{
+    width:45px;
+    height: 45px;
+}
+.navbar ul li a{
+    color:black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.navbar ul li a:hover{
+    color:chocolate;
+}
+.navbar ul li a i{
+    margin-right: 10px;
+    color: rgb(134, 37, 37);
+    font-size: 1.2rem;
+}
+.button i{
+    margin-right: 8px;
+}
+.container h1{
+    color: chocolate;
+}
+.container span{
+    color: rgb(39, 2, 2);
+}
+.row1{
+    margin-top: 20px;
+}
+.card1{
+    background-color:  rgb(125, 26, 26);
+    /* box-shadow: 1px 2px 8px rgba(0 0 0/8%), -1px -2px 8px rgba(0 0 0/8%); */
+    box-shadow: 3px 3px 7px 2px rgb(155, 90, 90),-3px -3px 7px 2px rgb(155, 90, 90);
+}
+.bolg-img img{
+    margin-top: 10px;
+}
+.card1 .bolg-img img{
+    width: 100px;
+    border-radius: 50%;
+}
+.content h3{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px 0;
+    color: white;
+}
+.content .pera{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.blog{
+    position: relative;
+    perspective: 1000px;
+}
+.blog .card1{
+    transform: rotateY(0);
+    transition: all 0.5s ease-in-out;
+}
+.blog:hover .card1{
+    transform: rotateY(-90deg);
+}
+.rating{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   top: 0;
+   left: 0;
+   padding: 5px;
+   background-color: black;
+   color:white;
+   transform: rotateY(90deg);
+   transition: all 0.5s ease-in-out;
+}
+.blog:hover .rating{
+    transform: rotateY(0);
+}
+.rating-img img{
+    width: 150px;
+    border-radius: 50%;
+
+}
+.rating .pera{
+    text-align: center;
+    padding-top: 10px;
+}
+.rating .star{
+    text-align: center;
+    color: #FDCC0D;
+}
+.footer{
+    background-color: black;
+    color: white;
+}
+.company-logo img{
+    margin-top: 10px;
+   background-color: white;
+}
+.content p{
+    padding-top: 20px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.link-heading h5{
+    margin-top: 10px;
+    text-align: center;
+    color: chocolate;
+}
+.link{
+    color: white;
+    text-align: center;
+}
+.link a{
+    display: block;
+    color: white;
+    padding-top: 10px;
+}
+.link a:hover{
+    display: block;
+    color:chocolate
+}
+.follow-icon{
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2rem;
+}
+.follow-icon a span{
+    margin-left:10px;
+    color: white;
+}
+.follow-icon a span:hover{
+    background-color: white;
+    color: rgb(67, 5, 5);
+}
+
+

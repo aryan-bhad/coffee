@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    box-shadow: 3px 3px 1px 6px #fff;
+}
+.navbar{
+    background-color: #fff;
+    color: black;
+    padding: 0 10px;
+    box-shadow: 3px  5px 6px #776161;
+    height: 90px;
+}
+.logo{
+    width:45px;
+    height: 45px;
+}
+.navbar ul li a{
+    color:black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.navbar ul li a:hover{
+    color:chocolate;
+}
+.navbar ul li a i{
+    margin-right: 10px;
+    color:  rgb(134, 37, 37);
+    font-size: 1.2rem;
+}
+.button i{
+    margin-right: 8px;
+}
+.heading{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.heading h1 {
+    color: rgb(65, 8, 16);
+}
+.heading h1 span{
+    color: chocolate;
+}
+.product_card{
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 1px 2px 8px rgba(0 0 0/8%), -1px -2px 8px rgba(0 0 0/8%);
+}
+.icon{
+    font-size: 1.2rem;
+    color: red;
+}
+.icon .card1{
+    font-size: 1.2rem;
+    color:chocolate;
+    padding: 0 10px;
+    
+}
+.prodcut_name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.product_img img{
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+.product_reting i{
+    color: #FDCC0D;
+}
+.product_price .mainp{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.product_price .maindes{
+    font-size: 1.2rem;
+    font-size: 500;
+}
+.product_reting{
+     margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.product_img img:hover{
+    transform: scale(1.2);
+}
+.btn{
+    border-radius: 50px;
+}
+.footer{
+    background-color: black;
+    color: white;
+}
+.company-logo img{
+    margin-top: 10px;
+   background-color: white;
+}
+.content p{
+    padding-top: 20px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.link-heading h5{
+    margin-top: 10px;
+    text-align: center;
+    color: chocolate;
+}
+.link{
+    color: white;
+    text-align: center;
+}
+.link a{
+    display: block;
+    color: white;
+    padding-top: 10px;
+}
+.link a:hover{
+    display: block;
+    color:chocolate
+}
+.follow-icon{
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2rem;
+}
+.follow-icon a span{
+    margin-left:10px;
+    color: white;
+}
+.follow-icon a span:hover{
+    background-color: white;
+    color: rgb(67, 5, 5);
+}

@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    box-shadow: 3px 3px 1px 6px #fff;
+}
+.navbar{
+    background-color: #fff;
+    color: black;
+    padding: 0 10px;
+    box-shadow: 3px  5px 6px #776161;
+    height: 90px;
+}
+.logo{
+    width:45px;
+    height: 45px;
+}
+.navbar ul li a{
+    color:black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.navbar ul li a:hover{
+    color:chocolate;
+}
+.navbar ul li a i{
+    margin-right: 10px;
+    color: rgb(134, 37, 37);
+    font-size: 1.2rem;
+}
+.button i{
+    margin-right: 8px;
+}
+.info{
+    margin-top: 30px;
+}
+.information{
+    
+    background-color:white;
+    color:black;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 1px 2px 8px rgba(0 0 0/8%), -1px -2px 8px rgba(0 0 0/8%);
+    
+}
+.information:hover{
+    background-color:black;
+    color:#fff
+}
+.icon i{
+    font-size: 3rem;
+    padding-top: 10px;
+   padding-left: 10px;
+   color: chocolate;
+}
+.content h3{
+    padding-top: 10px;
+    color: rgb(142, 26, 26);
+}
+.content ul li i{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(80, 10, 10);
+}
+.content ul li{
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.container h1{
+    color: chocolate;
+    margin-bottom: 40px;
+}
+.container span{
+    color: rgb(97, 17, 17);
+}
+.card-contry{
+    box-shadow: 1px 2px 8px rgba(0 0 0/8%), -1px -2px 8px rgba(0 0 0/8%);
+    position: relative;
+    overflow: hidden;
+}
+.card-contry .contry-img img{
+    width: 100%;
+    box-shadow: 1px 2px 8px rgba(0 0 0/8%), -1px -2px 8px rgba(0 0 0/8%);
+}
+.content h3{
+    text-align: center;
+}
+.content p{
+    text-align: center;
+}
+
+.contry .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    left: 0;
+    bottom: -100%;
+    color: white;
+    background-color: rgb(0,0,0,0.7);
+    transition: all 0.5s ease;
+}
+.contry .content h3{
+    color: white;
+}
+.contry:hover .content{
+    bottom: 0;
+}
+.footer{
+    background-color: black;
+    color: white;
+}
+.company-logo img{
+    margin-top: 10px;
+   background-color: white;
+}
+.content p{
+    padding-top: 20px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.link-heading h5{
+    margin-top: 10px;
+    text-align: center;
+    color: chocolate;
+}
+.link{
+    color: white;
+    text-align: center;
+}
+.link a{
+    display: block;
+    color: white;
+    padding-top: 10px;
+}
+.link a:hover{
+    display: block;
+    color:chocolate
+}
+.follow-icon{
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2rem;
+}
+.follow-icon a span{
+    margin-left:10px;
+    color: white;
+}
+.follow-icon a span:hover{
+    background-color: white;
+    color: rgb(67, 5, 5);
+}

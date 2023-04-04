@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/js/bootstrap.min.js">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="../fontawesome-free-6.3.0-web/css/all.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.3.0-web/css/fontawesome.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.3.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <script src="../jquery.js"></script>
+    <title>Product</title>
+
+    <script>
+
+        let http = new XMLHttpRequest();
+
+        http.open('GET', '../json/product.json', true);
+
+        http.send();
+
+        http.onload = function () {
+            let Res = http.responseText;
+
+            let Pas = JSON.parse(Res);
+
+            console.log(Pas);
+
+            let display = "";
+
+            for (let i of Pas) {
+                display += `
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="product_card">
+                            <div class="icon">
+                                <center>
+                                <i class="${i.icon}"></i>
+                                <i class="${i.icon2} card1"></i>
+                                </center>
+                            </div>
+                            <div class="product_img p-3">
+                                <a href=""><img src="${i.img}" alt="" class="img-fluid"></a>
+                            </div>
+                            <div class="prodcut_content text-center">
+                                <div class="prodcut_name">
+                                    <h4>${i.name}</h4>
+                                </div>
+                                <div class="product_reting">
+                                    <i class="${i.reting.star}"></i>
+                                    <i class="${i.reting.star2}"></i>
+                                    <i class="${i.reting.star3}"></i>
+                                    <i class="${i.reting.star4}"></i>
+                                    <i class="${i.reting.star5}"></i>
+                                </div>
+                                <div class="product_price">
+                                   <span class="text-danger fw-bold mainp">${i.price}</span>
+                                <span class="text-muted fw-bold ms-1 maindes" style="padding-left: 5px;" ><del>${i.discount}</del></span>
+                                </div>
+                                
+                                <button type="button" class="btn btn-outline-danger mt-2 px-4">
+                                    <span>View More</span>
+                                  <i class="fa-solid fa-eye ms-2"></i>
+
+                            </button>
+                            </div>
+                        </div>
+                    </div> 
+                `
+            }
+            document.querySelector(".product").innerHTML=display;
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+    <section>
+        <header style="margin: 0;padding: 0;">
+            <nav class="navbar navbar-expand-lg">
+                <div class="logo">
+                    <a href="#"><img src="../img/logo.png" alt=""></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto menu">
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="../index.html"><i
+                                    class="fa-sharp fa-solid fa-house-chimney"></i>Home</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="product.html"><i class="fa-brands fa-shopify"></i>Product</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="about.html"><i class="fa-solid fa-user-group"></i>About</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="contact_us.html"><i class="fa-solid fa-envelope"></i>Contact_us</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="blog.html"><i class="fa-solid fa-fan"></i>Blog</a>
+                        </li>
+                    </ul>
+                    <div class="button">
+                        <button style="border-radius: 50px; font-weight: 500;"
+                            class="btn btn-outline-danger my-2 my-sm-0" type="submit"><i
+                                class="fa-solid fa-user"></i>Regestration</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <!-- secyion end -->
+
+    <!-- product section start -->
+
+    <div class="container">
+        <div class="heading">
+            <h1><span>Over</span> Product </h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product row">
+
+        </div>
+    </div>
+
+    <footer style="margin-left: 1px; margin-right: 1px;">
+        <div class="container-fluid footer" style="margin-top: 60px;">
+          <div class="row" style="margin: 0; padding: 0;">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              
+              <div class="web-footer">
+                <h5 style="text-align: center; margin-top: 10px;color: chocolate;">Company</h5>
+                <div class="company-logo">
+                  <center>
+                  <img src="../img/logo.png" alt="">
+                </center>
+                </div>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eum numquam eaque tempora quam, voluptatibus voluptas mollitia praesentium libero ducimus!</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <div class="web-footer">
+                <div class="link-heading">
+                  <h5>Useful Link</h5>
+                </div>
+                <div class="link">
+                  <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact_us.html">Contact_Us</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <div class="web-footer">
+                <div class="link-heading">
+                  <h5>Info</h5>
+                </div>
+                <div class="compny-info">
+                  
+                            <div class="content py-2" style="text-align: center;">
+                                <div class="phone">
+                                    <span class="fas fa-phone-alt"></span>
+                                    <span class="text" style="padding: 10%;"><B>+011-</B>25874136</span>
+                                </div>
+            
+                                <div class="place">
+                                    <span class="fas fa-map-marker-alt"></span>
+                                    <span class="text" style="padding: 10%;">Ashok Nagar<b>,</b>West Delhi</span>
+                                </div>
+            
+                                <div class="email">
+                                    <span class="fas fa-envelope"></span>
+                                    <span class="text" style="padding: 10%;">jshostel007@gmail.com</span>
+                                </div>
+                            </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <div class="web-footer">
+                <h5 style="text-align: center; margin-top: 10px;  color: chocolate;">Follow Us</h5>
+              </div>
+              <div class="follow-icon">
+                <a href="#"><span class="fab fa-facebook-f"></span></a>
+                <a href="#"><span class="fab fa-twitter"></span></a>
+                <a href="#"><span class="fab fa-instagram"></span></a>
+                <a href="#"><span class="fab fa-youtube"></span></a>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </footer>
+    
+</body>
+
+</html>
